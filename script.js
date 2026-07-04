@@ -4,8 +4,7 @@
    scroll reveals, sticky header and mobile nav.
    ============================================================ */
 /*CLOCK FUNCTION*/
-<script>
-  function updateClock() {
+function updateClock() {
     const now = new Date();
     let hours = now.getHours();
     let minutes = now.getMinutes();
@@ -30,9 +29,8 @@
   
   // Initialize clock immediately when page loads
   updateClock();
-</script>
 
-
+/* ---------- END CLOCK---------- */
 
 /* ---------- Data ---------- */
 const AVATAR_PALETTE = [
