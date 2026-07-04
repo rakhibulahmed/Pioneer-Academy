@@ -50,6 +50,24 @@ ul{list-style:none;margin:0;padding:0;}
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
 }
+/*----Clock---*/
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#live-clock {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #00ffcc;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
 /* ---------- Loader ---------- */
 .loader{
