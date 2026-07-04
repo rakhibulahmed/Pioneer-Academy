@@ -118,7 +118,9 @@ const modalClose = document.getElementById('modalClose');
 function openModal(t,i){
   const [c1,c2] = colorFor(i);
   modalBody.innerHTML = `
-    <div class="avatar" style="background:linear-gradient(135deg, ${c1}, ${c2})">${initials(t.name)}</div>
+    ${t.img 
+      ? `<img class="avatar-photo" src="${t.img}" alt="${t.name}">` 
+      : `<div class="avatar" style="background:linear-gradient(135deg, ${c1}, ${c2})">${initials(t.name)}</div>`}
     <h3>${t.name}</h3>
     <p class="subject">${t.subject}</p>
     <p class="qual">${t.qual}</p>
@@ -127,6 +129,11 @@ function openModal(t,i){
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
+
+
+
+
+
 function closeModal(){
   modalOverlay.classList.remove('open');
   document.body.style.overflow = '';
