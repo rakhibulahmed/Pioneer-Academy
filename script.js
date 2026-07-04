@@ -3,34 +3,7 @@
    Renders teacher & staff data, handles filters, modal,
    scroll reveals, sticky header and mobile nav.
    ============================================================ */
-/*CLOCK FUNCTION*/
-function updateClock() {
-    const now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
 
-    // Convert 24-hour format to 12-hour format if needed
-    // let ampm = hours >= 12 ? 'PM' : 'AM';
-    // hours = hours % 12;
-    // hours = hours ? hours : 12; // the hour '0' should be '12'
-
-    // Add leading zero if the number is less than 10
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
-
-    const timeString = `${hours}:${minutes}:${seconds}`;
-    document.getElementById('live-clock').textContent = timeString;
-  }
-
-  // Update the clock every 1 second (1000 milliseconds)
-  setInterval(updateClock, 1000);
-  
-  // Initialize clock immediately when page loads
-  updateClock();
-
-/* ---------- END CLOCK---------- */
 
 /* ---------- Data ---------- */
 const AVATAR_PALETTE = [
