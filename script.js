@@ -3,6 +3,36 @@
    Renders teacher & staff data, handles filters, modal,
    scroll reveals, sticky header and mobile nav.
    ============================================================ */
+/*CLOCK FUNCTION*/
+<script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    // Convert 24-hour format to 12-hour format if needed
+    // let ampm = hours >= 12 ? 'PM' : 'AM';
+    // hours = hours % 12;
+    // hours = hours ? hours : 12; // the hour '0' should be '12'
+
+    // Add leading zero if the number is less than 10
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('live-clock').textContent = timeString;
+  }
+
+  // Update the clock every 1 second (1000 milliseconds)
+  setInterval(updateClock, 1000);
+  
+  // Initialize clock immediately when page loads
+  updateClock();
+</script>
+
+
 
 /* ---------- Data ---------- */
 const AVATAR_PALETTE = [
@@ -25,6 +55,7 @@ const CATEGORIES = {
 };
 
 const TEACHERS = [
+  {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.'},
   {name:'Mr. Aminul Islam', subject:'Senior English', cat:'english', qual:'M.A. English, B.Ed.', bio:'Heads the English department and mentors students for debate and elocution competitions across the district.'},
   {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
   {name:'Mr. Nurul Haque', subject:'English (Junior)', cat:'english', qual:'B.A., D.El.Ed.', bio:'Teaches spoken English to the primary wing through songs, flashcards and classroom games.'},
@@ -34,7 +65,7 @@ const TEACHERS = [
   {name:'Mr. Ranjit Sarkar', subject:'Physical Science', cat:'science', qual:'M.Sc. Physics, B.Ed.', bio:'Sets up simple physics demonstrations from everyday materials so every concept has something to touch.'},
   {name:'Ms. Sultana Parveen', subject:'Life Science', cat:'science', qual:'M.Sc. Botany, B.Ed.', bio:'Keeps a small kitchen-garden plot behind the school where biology lessons come to life.'},
   {name:'Mr. Abdus Salam', subject:'Chemistry', cat:'science', qual:'B.Sc. Chemistry, B.Ed.', bio:'Known for turning the periodic table into a classroom game students actually look forward to.'},
-  {name:'Ms. Momtaz Begum', subject:'General Science', cat:'science', qual:'B.Sc., D.El.Ed.', bio:'Introduces science to the middle wing through observation walks around the school campus.'},
+
   {name:'Mr. Kamal Barman', subject:'History & Civics', cat:'social', qual:'M.A. History, B.Ed.', bio:'Brings local Assam history into the classroom alongside the national curriculum.'},
   {name:'Ms. Rupa Rani Das', subject:'Geography', cat:'social', qual:'M.A. Geography, B.Ed.', bio:'Uses hand-drawn maps and local river studies to teach geography grounded in the students\u2019 own surroundings.'},
   {name:'Mr. Idris Ali', subject:'Social Science', cat:'social', qual:'B.A., B.Ed.', bio:'Coordinates the annual school exhibition on civic awareness and community history.'},
@@ -51,9 +82,9 @@ const TEACHERS = [
 ];
 
 const STAFF = [
-  {name:'Mr. Sahabuddin Sk.', role:'Office Assistant', note:'Manages admissions, records and day-to-day school administration.'},
-  {name:'Ms. Fulmoti Rani', role:'Accountant', note:'Keeps the school\u2019s accounts, fees and payroll in order.'},
-  {name:'Mr. Motiur Rahman', role:'Attendant', note:'The first face students see each morning, keeping the campus running smoothly.'},
+  {name:'Mr. Sahabuddin Sk.', role:'Uncle', note:'Manages admissions, records and day-to-day school administration.'},
+  {name:'Ms. Fulmoti Rani', role:'Aunty', note:'Keeps the school\u2019s accounts, fees and payroll in order.'},
+  {name:'Mr. Motiur Rahman', role:'Aunty', note:'The first face students see each morning, keeping the campus running smoothly.'},
 ];
 
 /* ---------- Render teacher grid ---------- */
