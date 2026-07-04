@@ -26,7 +26,7 @@ const CATEGORIES = {
 };
 
 const TEACHERS = [
-  {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: "https://i.ibb.co/7J5975ST/image.png"},
+  {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: 'https://i.ibb.co/7J5975ST/image.png'},
   {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}
   /*
    {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
@@ -60,7 +60,10 @@ TEACHERS.forEach((t,i)=>{
   card.dataset.cat = t.cat;
   card.style.animationDelay = (i*35)+'ms';
   card.innerHTML = `
-    <div class="avatar" style="background:linear-gradient(135deg, ${c1}, ${c2})">${initials(t.name)}</div>
+    ${t.img 
+  ? `<img class="avatar-photo" src="${t.img}" alt="${t.name}">` 
+  : `<div class="avatar" style="background:linear-gradient(135deg, ${c1}, ${c2})">${initials(t.name)}</div>`}
+    
     <h3>${t.name}</h3>
     <p class="subject">${t.subject}</p>
     <p class="qual">${t.qual}</p>
