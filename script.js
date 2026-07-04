@@ -168,14 +168,6 @@ toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'})
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
-const navClose = document.getElementById('navClose');
-navClose.addEventListener('click', ()=>{
-  navLinks.classList.remove('open');
-  navToggle.classList.remove('open');
-});
-
-
-
 navToggle.addEventListener('click', ()=>{
   const open = navLinks.classList.toggle('open');
   navToggle.classList.toggle('open', open);
