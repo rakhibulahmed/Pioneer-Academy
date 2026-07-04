@@ -167,13 +167,20 @@ toTop.addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'})
 /* ---------- Mobile nav ---------- */
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+
 navToggle.addEventListener('click', ()=>{
   const open = navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open', open);
   navToggle.setAttribute('aria-expanded', open);
 });
 navLinks.querySelectorAll('a').forEach(a=>{
-  a.addEventListener('click', ()=> navLinks.classList.remove('open'));
+  a.addEventListener('click', ()=> {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+  });
 });
+
+
 
 /* ---------- Loader ---------- */
 window.addEventListener('load', ()=>{
