@@ -27,9 +27,9 @@ const CATEGORIES = {
 
 const TEACHERS = [
   {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: 'https://i.ibb.co/7J5975ST/image.png'},
-  {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}, 
-     {name:'Mr. Monowarul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX \u 2013X students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xqBKBrNV/image.png'},
-     {name:'Mr. Waliul Mondol.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX\u 2013X students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xRykCXd/image.png'},
+   {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}, 
+     {name:'Mr. Monowarul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX 2013 students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xqBKBrNV/image.png'},
+     {name:'Mr. Waliul Mondol.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX 2013 students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xRykCXd/image.png'}
   /*
    {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
   {name:'Mr. Nurul Haque', subject:'English (Junior)', cat:'english', qual:'B.A., D.El.Ed.', bio:'Teaches spoken English to the primary wing through songs, flashcards and classroom games.'},
