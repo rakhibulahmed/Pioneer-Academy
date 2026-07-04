@@ -26,31 +26,18 @@ const CATEGORIES = {
 };
 
 const TEACHERS = [
-  {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.'},
-  {name:'Mr. Aminul Islam', subject:'Senior English', cat:'english', qual:'M.A. English, B.Ed.', bio:'Heads the English department and mentors students for debate and elocution competitions across the district.'},
-  {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
+  {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: "https://i.ibb.co/7J5975ST/image.png"},
+  {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}
+  /*
+   {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
   {name:'Mr. Nurul Haque', subject:'English (Junior)', cat:'english', qual:'B.A., D.El.Ed.', bio:'Teaches spoken English to the primary wing through songs, flashcards and classroom games.'},
-  {name:'Mr. Bikram Das', subject:'Mathematics', cat:'maths', qual:'M.Sc. Mathematics, B.Ed.', bio:'Runs the Saturday Maths Club, where students build number sense through puzzles rather than formulas alone.'},
-  {name:'Ms. Farida Yeasmin', subject:'Mathematics', cat:'maths', qual:'B.Sc., B.Ed.', bio:'Focuses on foundational arithmetic for Classes III\u2013V, with a special interest in mental maths drills.'},
-  {name:'Mr. Jahirul Sk.', subject:'Mathematics (Senior)', cat:'maths', qual:'M.Sc. Mathematics', bio:'Prepares Class IX\u2013X students for board-level problem solving with a calm, patient style.'},
+   {name:'Ms. Farida Yeasmin', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Focuses on foundational arithmetic for Classes III\u2013V, with a special interest in mental maths drills.'},
+  {name:'Mr. Jahirul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX\u2013X students for board-level problem solving with a calm, patient style.'},
   {name:'Mr. Ranjit Sarkar', subject:'Physical Science', cat:'science', qual:'M.Sc. Physics, B.Ed.', bio:'Sets up simple physics demonstrations from everyday materials so every concept has something to touch.'},
   {name:'Ms. Sultana Parveen', subject:'Life Science', cat:'science', qual:'M.Sc. Botany, B.Ed.', bio:'Keeps a small kitchen-garden plot behind the school where biology lessons come to life.'},
   {name:'Mr. Abdus Salam', subject:'Chemistry', cat:'science', qual:'B.Sc. Chemistry, B.Ed.', bio:'Known for turning the periodic table into a classroom game students actually look forward to.'},
-
-  {name:'Mr. Kamal Barman', subject:'History & Civics', cat:'social', qual:'M.A. History, B.Ed.', bio:'Brings local Assam history into the classroom alongside the national curriculum.'},
-  {name:'Ms. Rupa Rani Das', subject:'Geography', cat:'social', qual:'M.A. Geography, B.Ed.', bio:'Uses hand-drawn maps and local river studies to teach geography grounded in the students\u2019 own surroundings.'},
-  {name:'Mr. Idris Ali', subject:'Social Science', cat:'social', qual:'B.A., B.Ed.', bio:'Coordinates the annual school exhibition on civic awareness and community history.'},
-  {name:'Ms. Nasima Akhtar', subject:'Assamese', cat:'language', qual:'M.A. Assamese, B.Ed.', bio:'Champions Assamese literature and organises the school\u2019s Bihu cultural programme every year.'},
-  {name:'Mr. Zakir Hussain', subject:'Bengali', cat:'language', qual:'M.A. Bengali, B.Ed.', bio:'Runs handwriting and recitation clubs to build confidence in reading and writing.'},
-  {name:'Ms. Suchitra Rani', subject:'Hindi', cat:'language', qual:'B.A. Hindi, B.Ed.', bio:'Makes Hindi grammar approachable through short skits performed by students themselves.'},
-  {name:'Mr. Abdul Kalam', subject:'Sanskrit', cat:'language', qual:'Shastri, B.Ed.', bio:'Teaches Sanskrit shlokas alongside grammar to give the language a living rhythm.'},
-  {name:'Mr. Saiful Islam', subject:'Computer Science', cat:'computer', qual:'BCA, B.Ed.', bio:'Set up the school\u2019s first computer lab and teaches basic digital literacy from Class VI onward.'},
-  {name:'Ms. Jasmin Sultana', subject:'Computer Applications', cat:'computer', qual:'B.Sc. IT', bio:'Introduces typing, spreadsheets and simple design tools to the senior classes.'},
-  {name:'Mr. Habibur Rahman', subject:'Physical Education', cat:'arts', qual:'B.P.Ed.', bio:'Leads morning assembly drills and coaches the school football and kabaddi teams.'},
-  {name:'Ms. Shirin Nahar', subject:'Art & Craft', cat:'arts', qual:'B.F.A.', bio:'Fills the school corridors with student artwork and runs the annual art fair.'},
-  {name:'Ms. Rahima Khatun', subject:'Pre-Primary Wing', cat:'primary', qual:'D.El.Ed., Montessori Cert.', bio:'Welcomes the school\u2019s youngest learners with rhymes, colours and their very first alphabet.'},
-  {name:'Ms. Anwara Begum', subject:'Pre-Primary Wing', cat:'primary', qual:'D.El.Ed.', bio:'Believes play is the first classroom, and structures every nursery lesson around it.'},
-];
+*/
+  ];
 
 const STAFF = [
   {name:'Mr. Sahabuddin Sk.', role:'Uncle', note:'Manages admissions, records and day-to-day school administration.'},
