@@ -27,12 +27,14 @@ const CATEGORIES = {
 
 const TEACHERS = [
   {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: 'https://i.ibb.co/7J5975ST/image.png'},
-  {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}
+  {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy'}, 
+     {name:'Mr. Monowarul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX \u 2013X students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xqBKBrNV/image.png'},
+     {name:'Mr. Waliul Mondol.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX\u 2013X students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xRykCXd/image.png'},
   /*
    {name:'Ms. Rehana Khatun', subject:'English', cat:'english', qual:'B.A. English, B.Ed.', bio:'Believes storytelling is the fastest way into a new language, and runs the school\u2019s weekly reading circle.'},
   {name:'Mr. Nurul Haque', subject:'English (Junior)', cat:'english', qual:'B.A., D.El.Ed.', bio:'Teaches spoken English to the primary wing through songs, flashcards and classroom games.'},
    {name:'Ms. Farida Yeasmin', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Focuses on foundational arithmetic for Classes III\u2013V, with a special interest in mental maths drills.'},
-  {name:'Mr. Jahirul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX\u2013X students for board-level problem solving with a calm, patient style.'},
+
   {name:'Mr. Ranjit Sarkar', subject:'Physical Science', cat:'science', qual:'M.Sc. Physics, B.Ed.', bio:'Sets up simple physics demonstrations from everyday materials so every concept has something to touch.'},
   {name:'Ms. Sultana Parveen', subject:'Life Science', cat:'science', qual:'M.Sc. Botany, B.Ed.', bio:'Keeps a small kitchen-garden plot behind the school where biology lessons come to life.'},
   {name:'Mr. Abdus Salam', subject:'Chemistry', cat:'science', qual:'B.Sc. Chemistry, B.Ed.', bio:'Known for turning the periodic table into a classroom game students actually look forward to.'},
