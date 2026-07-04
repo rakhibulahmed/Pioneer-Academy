@@ -287,6 +287,15 @@ section{padding:88px 0;}
   position:relative;transition:transform .4s var(--ease);
 }
 .teacher-card:hover .avatar{transform:rotate(-6deg) scale(1.05);}
+/* 👇 paste your new rules here */
+.avatar-photo{
+  width:88px;height:88px;border-radius:50%;object-fit:cover;
+  margin:0 auto 14px;transition:transform .4s var(--ease);
+}
+.teacher-card:hover .avatar-photo{transform:scale(1.06);}
+.modal-body .avatar-photo{width:96px;height:96px;margin-bottom:16px;}
+
+
 .teacher-card h3{font-family:var(--display);font-size:1.08rem;margin:0 0 4px;color:var(--indigo);}
 .teacher-card .subject{font-size:.82rem;color:var(--sunrise-deep);font-weight:600;margin:0 0 6px;}
 .teacher-card .qual{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);margin:0;}
