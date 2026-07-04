@@ -135,15 +135,7 @@ ul{list-style:none;margin:0;padding:0;}
 .nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(-1px,-5px);}
 .nav-toggle.open span:nth-child(2){opacity:0;}
 .nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(-1px,5px);}
-.nav-close-wrap{display:none;width:100%;justify-content:flex-end;margin-bottom:10px;}
-.nav-close{
-  background:var(--cream);border:0;width:38px;height:38px;border-radius:50%;
-  font-size:1.4rem;line-height:1;cursor:pointer;color:var(--indigo);
-}
-.nav-close:hover{background:var(--sunrise);color:#fff;}
-@media (max-width:760px){
-  .nav-close-wrap{display:flex;}
-}
+
 /* ---------- Hero ---------- */
 .hero{
   position:relative;overflow:hidden;
