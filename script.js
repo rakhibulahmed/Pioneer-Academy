@@ -27,7 +27,7 @@ const CATEGORIES = {
 
 const TEACHERS = [
   {name:'Mr. Rakhibul Ahmed', subject:'General Science', cat:'science', qual:'B.Sc.', bio:'Introduces science to the middle wing through observation walks around the school campus.', img: 'https://i.ibb.co/7J5975ST/image.png'},
-   {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, L. L. B', bio:'Good Boy', img:'https://ibb.co/572RZFp}, 
+   {name:'Mr. Moidul Islam', subject:'General Science', cat:'science', qual:'B.Sc, LL.B', bio:'I Am Good Boy', img: 'https://i.ibb.co/d0j0qgzJ/IMG-20260705-WA0002.jpg'}, 
      {name:'Mr. Monowarul Sk.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX 2013 students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xqBKBrNV/image.png'},
      {name:'Mr. Waliul Mondol.', subject:'Mathematics', cat:'maths', qual:'B.Sc. Mathematics', bio:'Prepares Class IX 2013 students for board-level problem solving with a calm, patient style.', img: 'https://i.ibb.co/xRykCXd/image.png'}
   /*
