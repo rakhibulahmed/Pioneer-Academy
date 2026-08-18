@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>403 - Access Forbidden</title>
+  <!-- Google Fonts: Handwritten (Caveat) and Modern Body Font (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #2e1065 100%);
+      font-family: 'Caveat', cursive;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 45px 35px;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    /* Floating Image Error Vector Visual */
+    .error-graphic {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(2deg); }
+    }
+
+    .badge {
+      font-family: 'Poppins', sans-serif;
+      display: inline-block;
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 16px;
+      border-radius: 50px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    /* Vibrant Multi-Color Handwritten Text */
+    .title {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #ff7eb3, #ff758c, #f7d070, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 8px rgba(255, 120, 180, 0.2));
+    }
+
+    .subtitle {
+      font-size: 2.2rem;
+      color: #a7f3d0;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px rgba(167, 243, 208, 0.3);
+    }
+
+    .email-card {
+      background: rgba(0, 0, 0, 0.25);
+      border: 2px dashed #f472b6;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 25px;
+      transition: border-color 0.3s ease;
+    }
+
+    .email-card:hover {
+      border-color: #38bdf8;
+    }
+
+    .email-link {
+      font-size: 2.2rem;
+      color: #38bdf8;
+      text-decoration: none;
+      word-break: break-all;
+      transition: transform 0.2s ease, color 0.2s ease;
+      display: inline-block;
+    }
+
+    .email-link:hover {
+      color: #fbbf24;
+      transform: scale(1.04);
+    }
+
+    /* Action Button */
+    .btn {
+      font-family: 'Poppins', sans-serif;
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(236, 72, 153, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Image Error SVG Vector -->
+    <div class="error-graphic">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Broken Image Box -->
+        <rect x="10" y="15" width="80" height="70" rx="12" stroke="#38bdf8" stroke-width="3" fill="rgba(56, 189, 248, 0.05)"/>
+        <circle cx="32" cy="38" r="7" fill="#fbbf24"/>
+        <path d="M15 75 L38 50 L58 70 L70 58 L85 75" stroke="#a7f3d0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Forbidden Red Cross Indicator -->
+        <circle cx="72" cy="28" r="14" fill="#ef4444"/>
+        <path d="M66 22 L78 34 M78 22 L66 34" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <span class="badge">Error 403</span>
+
+    <h1 class="title">Dear user, this site is forbidden for users.</h1>
+    <p class="subtitle">Please contact the Administrator.</p>
+
+    <div class="email-card">
+      <a href="mailto:hellowrakhibul@gmail.com" class="email-link">hellowrakhibul@gmail.com</a>
+    </div>
+
+    <a href="mailto:hellowrakhibul@gmail.com" class="btn">Contact Administrator</a>
+  </div>
+
+</body>
+</html>
+
